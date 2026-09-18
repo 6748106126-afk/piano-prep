@@ -65,7 +65,21 @@ window.APP_DATA = {
       "source": "dochord.com/136734",
       "confidence": "verified",
       "is_piano_live_arrangement": true,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "C",
+        "F",
+        "Dm",
+        "G"
+      ],
+      "simplified_chorus_chords": [
+        "C",
+        "Am",
+        "Dm",
+        "G",
+        "F",
+        "C"
+      ]
     },
     {
       "id": "s003",
@@ -136,7 +150,14 @@ window.APP_DATA = {
       "source": "dochord.com/1220, guitarthai.com/chords/Song/3609",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_bridge_chords": [
+        "C",
+        "D",
+        "Bb",
+        "Gm",
+        "Dm"
+      ]
     },
     {
       "id": "s005",
@@ -169,7 +190,21 @@ window.APP_DATA = {
       "source": "dochord.com/28, guitarthai.com/chords/Song/4930, songbpm.com",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "C",
+        "Dm",
+        "Am",
+        "F",
+        "G"
+      ],
+      "simplified_chorus_chords": [
+        "F",
+        "Gm",
+        "Dm",
+        "Bb",
+        "C"
+      ]
     },
     {
       "id": "s006",
@@ -369,7 +404,19 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/3835, mechords.com/2017/11/mai-pae-chai.html",
       "confidence": "verified",
       "is_piano_live_arrangement": true,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_chorus_chords": [
+        "F",
+        "G",
+        "Em",
+        "A",
+        "Dm",
+        "C"
+      ],
+      "simplified_bridge_chords": [
+        "D",
+        "C"
+      ]
     },
     {
       "id": "s012",
@@ -407,7 +454,27 @@ window.APP_DATA = {
       "source": "dochord.com/366947, guitarthai.com/chords/Song/30251, mechords.com/2022/05/nont-melt.html",
       "confidence": "verified",
       "is_piano_live_arrangement": true,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "D",
+        "Dm",
+        "C#m",
+        "F#m",
+        "Bm",
+        "E"
+      ],
+      "simplified_chorus_chords": [
+        "A",
+        "D",
+        "Ebm",
+        "A",
+        "Bm",
+        "F#m"
+      ],
+      "simplified_bridge_chords": [
+        "Ebm",
+        "A"
+      ]
     },
     {
       "id": "s013",
@@ -441,7 +508,23 @@ window.APP_DATA = {
       "source": "hooktheory.com/theorytab/view/alicia-keys/if-i-aint-got-you, tabs.ultimate-guitar.com/tab/alicia-keys/if-i-aint-got-you-chords-111683",
       "confidence": "verified",
       "is_piano_live_arrangement": true,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "C",
+        "Bm",
+        "Am",
+        "G"
+      ],
+      "simplified_chorus_chords": [
+        "C",
+        "Bm",
+        "Am",
+        "G",
+        "Bbm"
+      ],
+      "simplified_bridge_chords": [
+        "Bbm"
+      ]
     },
     {
       "id": "s014",
@@ -472,7 +555,19 @@ window.APP_DATA = {
       "source": "hooktheory.com/theorytab/view/lady-gaga/die-with-a-smile-(with-bruno-mars), tabs.ultimate-guitar.com/tab/lady-gaga/die-with-a-smile-chords-5389398",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "D",
+        "C#m",
+        "F#m",
+        "Bm"
+      ],
+      "simplified_chorus_chords": [
+        "A",
+        "E",
+        "F#m",
+        "D"
+      ]
     },
     {
       "id": "s015",
@@ -537,7 +632,16 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/3193, dochord.com/19654",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_chorus_chords": [
+        "Am",
+        "F",
+        "C",
+        "G",
+        "Em",
+        "C",
+        "Dm"
+      ]
     },
     {
       "id": "s017",
@@ -571,7 +675,22 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/4761, dochord.com/47461",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "G",
+        "Bm",
+        "Em",
+        "C",
+        "D"
+      ],
+      "simplified_chorus_chords": [
+        "Em",
+        "Am",
+        "D",
+        "G",
+        "G",
+        "G"
+      ]
     },
     {
       "id": "s018",
@@ -607,7 +726,25 @@ window.APP_DATA = {
       "source": "dochord.com/141092, guitarthai.com/chord/chordview.asp?QID=... (chordzaa.com/1016)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "G",
+        "Em",
+        "Am",
+        "D"
+      ],
+      "simplified_chorus_chords": [
+        "C",
+        "C",
+        "Bm",
+        "Em",
+        "Am",
+        "D",
+        "G"
+      ],
+      "simplified_bridge_chords": [
+        "A"
+      ]
     },
     {
       "id": "s019",
@@ -638,7 +775,19 @@ window.APP_DATA = {
       "source": "dochord.com/376541 (เจินเจิน บุญสูงเนิน version); exact chord order for the reproduced cover not confirmed",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_verse_chords": [
+        "Em",
+        "A",
+        "D",
+        "F#m"
+      ],
+      "simplified_chorus_chords": [
+        "D",
+        "F#m",
+        "Em",
+        "A"
+      ]
     },
     {
       "id": "s020",
@@ -709,7 +858,18 @@ window.APP_DATA = {
       "source": "hooktheory.com/theorytab/view/wham/last-christmas, tabs.ultimate-guitar.com/tab/wham/last-christmas-chords-1115355",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_chorus_chords": [
+        "D",
+        "F#m",
+        "Bm",
+        "E",
+        "A",
+        "D",
+        "Bm",
+        "E",
+        "A"
+      ]
     },
     {
       "id": "s022",
@@ -808,7 +968,17 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/40668, dochord.com/150855",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_chorus_chords": [
+        "Dm",
+        "G",
+        "C",
+        "Am",
+        "F",
+        "E",
+        "F",
+        "C"
+      ]
     },
     {
       "id": "s025",
@@ -872,7 +1042,15 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/6801, dochord.com/25287, mechords.com/2021/12/room39-pen-took-young.html",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 2
+      "duplicate_count": 2,
+      "simplified_chorus_chords": [
+        "G",
+        "F#m",
+        "Em",
+        "A",
+        "D",
+        "D"
+      ]
     },
     {
       "id": "s027",
@@ -1033,7 +1211,13 @@ window.APP_DATA = {
       "source": "songsterr.com/a/wsa/cocktail-feat-q-flure-yours-ever-lyrics-tab-s1761585, chordify.net (multiple covers)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "Ab",
+        "Bb",
+        "Eb",
+        "Cm"
+      ]
     },
     {
       "id": "s032",
@@ -1064,7 +1248,19 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/16625, dochord.com/307316, mechords.com/2019/08/gam-nong-nang.html",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "D",
+        "C",
+        "Bm"
+      ],
+      "simplified_chorus_chords": [
+        "C",
+        "G",
+        "D",
+        "C"
+      ]
     },
     {
       "id": "s033",
@@ -1098,7 +1294,16 @@ window.APP_DATA = {
       "source": "mechords.com / dochord.com / chordzaa.com (chord set Bb,F,C,Gm,Am,A7,Dm,F7 found; exact bar-by-bar sequence not confirmed)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "C",
+        "Dm",
+        "Gm",
+        "F",
+        "Bb",
+        "A",
+        "Dm"
+      ]
     },
     {
       "id": "s034",
@@ -1335,7 +1540,14 @@ window.APP_DATA = {
       "source": "guitarthai.com (9-chord song D,F#m,Bm,A,G,Em,Dmaj7,Am,Gmaj7; intro D-Em-F#m-G confirmed, a diatonic ascending walk-up rather than a standard 4-chord loop)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "Bm",
+        "G",
+        "D",
+        "A",
+        "G"
+      ]
     },
     {
       "id": "s041",
@@ -1500,7 +1712,17 @@ window.APP_DATA = {
       "source": "estimated from genre convention (dochord.com/chordhit.com list the song; chord detail page not retrievable)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "C",
+        "G/B",
+        "Am",
+        "Em/G",
+        "F",
+        "C/E",
+        "Dm",
+        "G"
+      ]
     },
     {
       "id": "s046",
@@ -1532,7 +1754,20 @@ window.APP_DATA = {
       "source": "busk.town / guitarthai.com (descending-bass turnaround Eb-Bb/D-Cm7-Bb confirmed)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "Eb",
+        "Bb/D",
+        "Cm",
+        "Bb"
+      ],
+      "simplified_chorus_chords": [
+        "Ab",
+        "Eb/G",
+        "Fm",
+        "Bb",
+        "Eb"
+      ]
     },
     {
       "id": "s047",
@@ -1597,7 +1832,22 @@ window.APP_DATA = {
       "source": "chordguitar.net / Chordify (chromatic descending inner-voice line Gm-Gmmaj7-Gm7-Gm6 confirmed)",
       "confidence": "verified",
       "is_piano_live_arrangement": true,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "Bb",
+        "Dm",
+        "Eb",
+        "F"
+      ],
+      "simplified_chorus_chords": [
+        "Gm",
+        "Gm/F#",
+        "Gm",
+        "Gm",
+        "Cm",
+        "F",
+        "Bb"
+      ]
     },
     {
       "id": "s049",
@@ -1862,7 +2112,21 @@ window.APP_DATA = {
       "source": "Ultimate Guitar / ChordBand.com",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "C",
+        "G",
+        "Am",
+        "F"
+      ],
+      "simplified_chorus_chords": [
+        "C",
+        "G",
+        "Am",
+        "F",
+        "C",
+        "G"
+      ]
     },
     {
       "id": "s057",
@@ -2056,7 +2320,13 @@ window.APP_DATA = {
       "source": "mechords.com / chordzaa.com / chords.in.th (6-chord set G,Gsus4,Em,Bm,C,D confirmed)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "G",
+        "Em",
+        "Bm"
+      ]
     },
     {
       "id": "s063",
@@ -2126,7 +2396,28 @@ window.APP_DATA = {
       "source": "dochord.com (rich extended-jazz chord set: Cmaj7,D7,Bm7,Em7,Am7,G,A7,E7sus4,E7,Gmaj7,Cm9,F13,D9,E6add9)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "Em",
+        "Am",
+        "D"
+      ],
+      "simplified_chorus_chords": [
+        "Bm",
+        "E",
+        "Am",
+        "D",
+        "G",
+        "C",
+        "A",
+        "D"
+      ],
+      "simplified_bridge_chords": [
+        "Cm",
+        "F",
+        "E"
+      ]
     },
     {
       "id": "s065",
@@ -2198,7 +2489,13 @@ window.APP_DATA = {
       "source": "https://www.dochord.com/53817/ (also guitarthai.com, chordzaa.com, chordtabs.in.th)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "Dm",
+        "G",
+        "C",
+        "C"
+      ]
     },
     {
       "id": "s067",
@@ -2231,7 +2528,15 @@ window.APP_DATA = {
       "source": "mechords.com / bloggang.com karaoke chord notes (key E, capo 4, play as C)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "F",
+        "G",
+        "Am",
+        "Dm",
+        "G",
+        "C"
+      ]
     },
     {
       "id": "s068",
@@ -2365,7 +2670,12 @@ window.APP_DATA = {
       "source": "https://guitarthai.com/chord/chordview.asp?QID=1901, dochord.com/68617",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "Bm",
+        "E",
+        "A"
+      ]
     },
     {
       "id": "s072",
@@ -2404,7 +2714,14 @@ window.APP_DATA = {
       "source": "thechordtab.com, dochord.com/10427 (chromatic chorus movement C#m-G#m7-F#7 doesn't fit a simple diatonic family)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "C#m",
+        "G#m",
+        "F#",
+        "A",
+        "B"
+      ]
     },
     {
       "id": "s073",
@@ -2509,7 +2826,21 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/3495/ (14 chords incl. a key-change section: C G Am7 E7 F D G7 Em Dm A7 A Bm7 F#7 F#m)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "C",
+        "G",
+        "Am",
+        "E",
+        "F"
+      ],
+      "simplified_bridge_chords": [
+        "D",
+        "A",
+        "Bm",
+        "F#",
+        "F#m"
+      ]
     },
     {
       "id": "s076",
@@ -2576,7 +2907,25 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/27297/ (13 chords incl. Fdim, Cm, maj7 extensions - jazzy OST ballad)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "Em",
+        "C",
+        "D"
+      ],
+      "simplified_chorus_chords": [
+        "Bm",
+        "Em",
+        "Am",
+        "D",
+        "G"
+      ],
+      "simplified_bridge_chords": [
+        "Fm",
+        "Cm",
+        "C"
+      ]
     },
     {
       "id": "s078",
@@ -2607,7 +2956,13 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/song/4363/, chordzaa.com/2030 (intro A | B/A | G#m | C#m | F#m; shuffle feel noted in a Facebook tutorial)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "F#m",
+        "B",
+        "E",
+        "C#m"
+      ]
     },
     {
       "id": "s079",
@@ -2638,7 +2993,13 @@ window.APP_DATA = {
       "source": "https://www.dochord.com/367076/ (11 chords incl. A, Amaj7, D, Bm, F#m, E)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "A",
+        "A",
+        "D",
+        "Bm"
+      ]
     },
     {
       "id": "s080",
@@ -2674,7 +3035,19 @@ window.APP_DATA = {
       "source": "https://www.dochord.com/41861/, guitarthai.com/chords/Song/4120 (13 chords incl. Amaj7, C#m7, F#m, Bm7, and a lower-key hook section on G)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "A",
+        "F#m",
+        "Bm",
+        "E"
+      ],
+      "simplified_chorus_chords": [
+        "D",
+        "E",
+        "F#m",
+        "Bm"
+      ]
     },
     {
       "id": "s081",
@@ -2748,7 +3121,26 @@ window.APP_DATA = {
       "source": "https://www.dochord.com/32818/ (19 chords incl. 9ths and secondary dominants - complex alt-rock arrangement)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "E",
+        "C#m",
+        "F#m",
+        "B"
+      ],
+      "simplified_chorus_chords": [
+        "A",
+        "E",
+        "C#",
+        "F#m",
+        "B",
+        "B"
+      ],
+      "simplified_bridge_chords": [
+        "G#m",
+        "C#",
+        "B"
+      ]
     },
     {
       "id": "s083",
@@ -2813,7 +3205,16 @@ window.APP_DATA = {
       "source": "Ultimate Guitar / e-chords.com (secondary dominants B7->Em and E7->Am, classic doo-wop-plus-jazz Christmas changes)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "G",
+        "B",
+        "Em",
+        "E",
+        "Cm",
+        "Am",
+        "D"
+      ]
     },
     {
       "id": "s085",
@@ -2844,7 +3245,19 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/35313/, busk.town (jazzy R&B chords: Fmaj7, A/C#, Dm7, Cm7, F9)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "F",
+        "A/C#",
+        "Dm",
+        "Gm"
+      ],
+      "simplified_chorus_chords": [
+        "Bb",
+        "Bbm",
+        "Cm",
+        "F"
+      ]
     },
     {
       "id": "s086",
@@ -2937,7 +3350,19 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/38427/ (key G, chords G/Em7/D/C6, ~72 bpm)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "Em",
+        "D",
+        "C"
+      ],
+      "simplified_chorus_chords": [
+        "G",
+        "Em",
+        "D",
+        "C"
+      ]
     },
     {
       "id": "s089",
@@ -2969,7 +3394,14 @@ window.APP_DATA = {
       "source": "https://www.dochord.com/103052/ (acoustic version; note: song title is 'Galaxy', 'Galaxy Express' in the raw title appears to be a mistranscription)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "C",
+        "D",
+        "Bm",
+        "E",
+        "Am"
+      ]
     },
     {
       "id": "s090",
@@ -3005,7 +3437,25 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/3329/ (7 chords incl. borrowed Bbm7 - classic Boyd Kosiyabong-style jazzy ballad)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "Bm",
+        "Am",
+        "D"
+      ],
+      "simplified_chorus_chords": [
+        "Em",
+        "Am",
+        "D",
+        "G"
+      ],
+      "simplified_bridge_chords": [
+        "D",
+        "D",
+        "Bbm",
+        "Am"
+      ]
     },
     {
       "id": "s091",
@@ -3098,7 +3548,19 @@ window.APP_DATA = {
       "source": "Ultimate Guitar / Chordify (well-documented classic Bee Gees ii-V-I jazzy ballad turnaround)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "Eb",
+        "Fm",
+        "Bb",
+        "Bb"
+      ],
+      "simplified_chorus_chords": [
+        "Cm",
+        "Fm",
+        "Bb",
+        "Eb"
+      ]
     },
     {
       "id": "s094",
@@ -3202,7 +3664,13 @@ window.APP_DATA = {
       "source": "https://www.guitarthai.com/chords/Song/34267/ (12 chords incl. a key change and a half-diminished C#m7b5 chord)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "Bm",
+        "G",
+        "C#m",
+        "F#"
+      ]
     },
     {
       "id": "s097",
@@ -3300,7 +3768,21 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/3188/ and chordandlyrics.com",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "G",
+        "G",
+        "C",
+        "Cm"
+      ],
+      "simplified_chorus_chords": [
+        "G",
+        "G",
+        "Am",
+        "D",
+        "Bm",
+        "G"
+      ]
     },
     {
       "id": "s100",
@@ -3335,7 +3817,24 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/33831/ (คอร์ดเพลง จังหวะตกหลุมรัก DIDIxDADA)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "Gb",
+        "Ebm",
+        "Abm",
+        "Db"
+      ],
+      "simplified_chorus_chords": [
+        "Cb",
+        "Bbm",
+        "Eb",
+        "Db"
+      ],
+      "simplified_bridge_chords": [
+        "Cb/Gb",
+        "Db",
+        "Eb"
+      ]
     },
     {
       "id": "s101",
@@ -3405,7 +3904,26 @@ window.APP_DATA = {
       "source": "dochord.com/370642/ (คอร์ดเพลง ขอบคุณที่เกิดมาให้รัก MEAN ft. JIXGO), cross-checked guitarthai.com",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "D",
+        "A/C#",
+        "Bm",
+        "G"
+      ],
+      "simplified_chorus_chords": [
+        "G",
+        "D",
+        "A",
+        "Bm",
+        "Em",
+        "F#m"
+      ],
+      "simplified_bridge_chords": [
+        "G/B",
+        "G",
+        "A"
+      ]
     },
     {
       "id": "s103",
@@ -3633,7 +4151,11 @@ window.APP_DATA = {
       "source": "dochord.com/367229/ and guitarthai.com/chords/Song/30922/ (multiple key versions found, chords set verified but exact bar order approximate)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "Em",
+        "A"
+      ]
     },
     {
       "id": "s110",
@@ -3673,7 +4195,16 @@ window.APP_DATA = {
       "source": "laurenbateman.com/in-my-life-chords/ and Ultimate Guitar (In My Life chords)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "A",
+        "E",
+        "F#m",
+        "A",
+        "D",
+        "Dm",
+        "A"
+      ]
     },
     {
       "id": "s111",
@@ -3739,7 +4270,11 @@ window.APP_DATA = {
       "source": "Hooktheory and Ultimate Guitar (Thinking Out Loud chords)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "Em",
+        "A"
+      ]
     },
     {
       "id": "s113",
@@ -3773,7 +4308,11 @@ window.APP_DATA = {
       "source": "dochord.com/139867/ (คอร์ดเพลง หนึ่งมิตรชิดใกล้ อัสนี วสันต์)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "G",
+        "C"
+      ]
     },
     {
       "id": "s114",
@@ -3840,7 +4379,21 @@ window.APP_DATA = {
       "source": "dochord.com/5516/ (คอร์ดเพลง ปรารถนาสิ่งใดฤา COCKTAIL), cross-checked guitarthai.com/chords/Song/9519/",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "D",
+        "G",
+        "Bm",
+        "A"
+      ],
+      "simplified_chorus_chords": [
+        "G",
+        "D",
+        "F#m",
+        "Bm",
+        "A",
+        "D"
+      ]
     },
     {
       "id": "s116",
@@ -3876,7 +4429,20 @@ window.APP_DATA = {
       "source": "dochord.com/136651/ (คอร์ดเพลง ไม่แข่งยิ่งแพ้ เบิร์ด ธงไชย), cross-checked guitarthai.com/chords/Song/4760/",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "A",
+        "G#m",
+        "G",
+        "F#m"
+      ],
+      "simplified_chorus_chords": [
+        "B",
+        "E",
+        "C#m",
+        "C#",
+        "F#"
+      ]
     },
     {
       "id": "s117",
@@ -3910,7 +4476,23 @@ window.APP_DATA = {
       "source": "dochord.com/373127/ (คอร์ดเพลง ขอบใจจริงๆ เบิร์ด ธงไชย)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "Am",
+        "D",
+        "G",
+        "Em"
+      ],
+      "simplified_chorus_chords": [
+        "G",
+        "G",
+        "C",
+        "Bm",
+        "E"
+      ],
+      "simplified_bridge_chords": [
+        "Cm"
+      ]
     },
     {
       "id": "s118",
@@ -3942,7 +4524,14 @@ window.APP_DATA = {
       "source": "dochord.com/136628/ (คอร์ดเพลง บูมเมอแรง เบิร์ด ธงไชย), cross-checked guitarthai.com/chords/song/5024/",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "C",
+        "Am",
+        "F",
+        "G",
+        "D"
+      ]
     },
     {
       "id": "s119",
@@ -4039,7 +4628,18 @@ window.APP_DATA = {
       "source": "Chordify/chords.vip aggregated tabs for GAVIN.D - A Rocket to the Moon (conflicting chord sets across covers)",
       "confidence": "estimated",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "G",
+        "D",
+        "B",
+        "Em",
+        "A"
+      ],
+      "simplified_bridge_chords": [
+        "F#m",
+        "Gm"
+      ]
     },
     {
       "id": "s122",
@@ -4073,7 +4673,17 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/11781/ and dochord.com/116735/ (คอร์ดเพลง ออเจ้าเอย พีท พล)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_chorus_chords": [
+        "C",
+        "C",
+        "F",
+        "Am",
+        "Bb"
+      ],
+      "simplified_bridge_chords": [
+        "A"
+      ]
     },
     {
       "id": "s123",
@@ -4139,7 +4749,24 @@ window.APP_DATA = {
       "source": "guitarthai.com/chords/Song/4218/ and musicatm.com listing for เหนื่อยไหม เบิร์ด ธงไชย",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "C",
+        "D/C",
+        "Bm",
+        "Em"
+      ],
+      "simplified_chorus_chords": [
+        "Am",
+        "D",
+        "G",
+        "C"
+      ],
+      "simplified_bridge_chords": [
+        "Bb",
+        "Cm",
+        "D"
+      ]
     },
     {
       "id": "s125",
@@ -4174,7 +4801,12 @@ window.APP_DATA = {
       "source": "dochord.com/171990/ (คอร์ดเพลง ไว้ใจได้กา ลานนา คัมมินส์)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_bridge_chords": [
+        "Em",
+        "D",
+        "C"
+      ]
     },
     {
       "id": "s126",
@@ -4238,7 +4870,21 @@ window.APP_DATA = {
       "source": "chordsandguitar.com/music/Yesterday.pdf and Ultimate Guitar (Yesterday chords)",
       "confidence": "verified",
       "is_piano_live_arrangement": false,
-      "duplicate_count": 1
+      "duplicate_count": 1,
+      "simplified_verse_chords": [
+        "F",
+        "Em",
+        "A",
+        "Dm"
+      ],
+      "simplified_chorus_chords": [
+        "Bb",
+        "C",
+        "F",
+        "Dm",
+        "G",
+        "Bb"
+      ]
     }
   ],
   "technique": {
@@ -4440,7 +5086,8 @@ window.APP_DATA = {
         "Play minor triads in Am, Em, Dm",
         "Practice switching between just 2 chords (e.g. C to G) slowly and smoothly, 10 min/day"
       ],
-      "song_ids": []
+      "song_ids": [],
+      "coverage_song_ids": []
     },
     {
       "week": 2,
@@ -4455,7 +5102,8 @@ window.APP_DATA = {
       "song_ids": [
         "s005",
         "s053"
-      ]
+      ],
+      "coverage_song_ids": []
     },
     {
       "week": 3,
@@ -4464,12 +5112,34 @@ window.APP_DATA = {
       "goals": [
         "Drill I-V-vi-IV in C (C-G-Am-F) until your hand finds it without looking",
         "Apply the arpeggio-1-5-3-5 pattern on top once chord changes are smooth",
-        "Work through the Foundation songs in this family, one at a time, using the 20-minute learning method from the Technique Library"
+        "DEEP-DIVE (get fluent): today's Foundation songs below, using the 20-minute method",
+        "COVERAGE (quick pass): sight-read each Coverage song once, slow tempo, chart in hand — the goal is exposure, not polish. A few per practice day is plenty."
       ],
       "song_ids": [
         "s003",
         "s009",
         "s054"
+      ],
+      "coverage_song_ids": [
+        "s042",
+        "s067",
+        "s095",
+        "s119",
+        "s104",
+        "s043",
+        "s056",
+        "s065",
+        "s068",
+        "s088",
+        "s123",
+        "s006",
+        "s007",
+        "s010",
+        "s020",
+        "s022",
+        "s023",
+        "s038",
+        "s041"
       ]
     },
     {
@@ -4479,13 +5149,35 @@ window.APP_DATA = {
       "goals": [
         "Compare vi-IV-I-V and I-vi-IV-V against week 3's progression — same 4 chords, different feel",
         "Introduce the alberti-bass pattern as an alternative texture",
-        "Work through this week's Foundation songs"
+        "DEEP-DIVE: this week's Foundation songs below",
+        "COVERAGE: quick sight-read pass on this week's Coverage songs, a few per day"
       ],
       "song_ids": [
         "s015",
         "s025",
         "s001",
         "s008"
+      ],
+      "coverage_song_ids": [
+        "s047",
+        "s063",
+        "s069",
+        "s071",
+        "s073",
+        "s081",
+        "s097",
+        "s106",
+        "s125",
+        "s102",
+        "s108",
+        "s044",
+        "s052",
+        "s070",
+        "s083",
+        "s118",
+        "s126",
+        "s016",
+        "s019"
       ]
     },
     {
@@ -4495,12 +5187,34 @@ window.APP_DATA = {
       "goals": [
         "Learn to read and play slash chords (C/E, G/B, etc.)",
         "Drill the thai-ballad-rolling-arpeggio pattern with a walking bass",
-        "Work through this week's Foundation songs — expect this to take real repetition"
+        "DEEP-DIVE: this week's Foundation songs below — expect this to take real repetition",
+        "COVERAGE: quick sight-read pass on this week's Coverage songs"
       ],
       "song_ids": [
         "s098",
         "s032",
         "s004"
+      ],
+      "coverage_song_ids": [
+        "s030",
+        "s031",
+        "s037",
+        "s059",
+        "s060",
+        "s062",
+        "s079",
+        "s092",
+        "s093",
+        "s112",
+        "s114",
+        "s026",
+        "s051",
+        "s066",
+        "s035",
+        "s049",
+        "s087",
+        "s101",
+        "s045"
       ]
     },
     {
@@ -4510,35 +5224,99 @@ window.APP_DATA = {
       "goals": [
         "Learn the waltz-oom-pah-pah pattern for any 3/4 songs",
         "Practice progressions that center on vi instead of just passing through it",
-        "Work through this week's Foundation songs"
+        "DEEP-DIVE: this week's Foundation songs below",
+        "COVERAGE: quick sight-read pass on this week's Coverage songs"
       ],
       "song_ids": [
         "s050"
+      ],
+      "coverage_song_ids": [
+        "s046",
+        "s058",
+        "s076",
+        "s086",
+        "s111",
+        "s122",
+        "s027",
+        "s028",
+        "s034",
+        "s061",
+        "s074",
+        "s103",
+        "s120",
+        "s121",
+        "s011",
+        "s014",
+        "s017",
+        "s018",
+        "s021"
       ]
     },
     {
       "week": 7,
-      "title": "Fluency + remaining Foundation songs",
-      "focus": "Less new theory, more speed and confident sight-reading of charts you haven't memorized.",
+      "title": "Fluency + the harder songs (simplified chords)",
+      "focus": "Less new theory, more speed. This week's Coverage batch is the 'complex-other' songs (jazz extensions, modulations) — play them from the SIMPLIFIED chord chart (triads only), not the full original, so they're still doable at your level.",
       "goals": [
         "Clear any remaining Foundation-tier songs using patterns you already know",
         "Practice sight-reading a chord chart you've never seen while listening to the track",
-        "Start dipping into Stretch tier — same families, just new songs to apply them to"
+        "For Coverage songs marked 'simplified available', use the simplified chords, not the original — full accuracy is a later-month goal"
       ],
       "song_ids": [
         "s002"
+      ],
+      "coverage_song_ids": [
+        "s024",
+        "s029",
+        "s033",
+        "s040",
+        "s057",
+        "s072",
+        "s075",
+        "s078",
+        "s080",
+        "s084",
+        "s089",
+        "s090",
+        "s091",
+        "s094",
+        "s099",
+        "s105",
+        "s107",
+        "s110",
+        "s113"
       ]
     },
     {
       "week": 8,
-      "title": "Polish + expand",
-      "focus": "Get your favorites performance-ready, and set up a sustainable way to keep working through Stretch/Reference tier after these 2 months.",
+      "title": "Polish + finish the coverage pass",
+      "focus": "Get your favorites performance-ready, and clear the last Coverage batch so every one of your 127 songs has been touched at least once.",
       "goals": [
-        "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite songs",
+        "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite Foundation songs",
         "Record yourself once — it's the fastest way to hear what needs work",
-        "Pick a standing weekly slot to keep adding songs from Stretch/Reference tier going forward"
+        "Finish this week's Coverage songs (simplified chords where marked)",
+        "After month 2: revisit any Coverage song you want at full harmonic accuracy — the shortcut patterns you now know make that much faster the second time"
       ],
-      "song_ids": []
+      "song_ids": [],
+      "coverage_song_ids": [
+        "s115",
+        "s012",
+        "s013",
+        "s036",
+        "s039",
+        "s048",
+        "s055",
+        "s064",
+        "s077",
+        "s082",
+        "s085",
+        "s096",
+        "s100",
+        "s109",
+        "s116",
+        "s117",
+        "s124",
+        "s127"
+      ]
     }
   ]
 };

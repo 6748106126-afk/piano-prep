@@ -10,7 +10,8 @@
       "Play minor triads in Am, Em, Dm",
       "Practice switching between just 2 chords (e.g. C to G) slowly and smoothly, 10 min/day"
     ],
-    "song_ids": []
+    "song_ids": [],
+    "coverage_song_ids": []
   },
   {
     "week": 2,
@@ -25,7 +26,8 @@
     "song_ids": [
       "s005",
       "s053"
-    ]
+    ],
+    "coverage_song_ids": []
   },
   {
     "week": 3,
@@ -34,12 +36,34 @@
     "goals": [
       "Drill I-V-vi-IV in C (C-G-Am-F) until your hand finds it without looking",
       "Apply the arpeggio-1-5-3-5 pattern on top once chord changes are smooth",
-      "Work through the Foundation songs in this family, one at a time, using the 20-minute learning method from the Technique Library"
+      "DEEP-DIVE (get fluent): today's Foundation songs below, using the 20-minute method",
+      "COVERAGE (quick pass): sight-read each Coverage song once, slow tempo, chart in hand — the goal is exposure, not polish. A few per practice day is plenty."
     ],
     "song_ids": [
       "s003",
       "s009",
       "s054"
+    ],
+    "coverage_song_ids": [
+      "s042",
+      "s067",
+      "s095",
+      "s119",
+      "s104",
+      "s043",
+      "s056",
+      "s065",
+      "s068",
+      "s088",
+      "s123",
+      "s006",
+      "s007",
+      "s010",
+      "s020",
+      "s022",
+      "s023",
+      "s038",
+      "s041"
     ]
   },
   {
@@ -49,13 +73,35 @@
     "goals": [
       "Compare vi-IV-I-V and I-vi-IV-V against week 3's progression — same 4 chords, different feel",
       "Introduce the alberti-bass pattern as an alternative texture",
-      "Work through this week's Foundation songs"
+      "DEEP-DIVE: this week's Foundation songs below",
+      "COVERAGE: quick sight-read pass on this week's Coverage songs, a few per day"
     ],
     "song_ids": [
       "s015",
       "s025",
       "s001",
       "s008"
+    ],
+    "coverage_song_ids": [
+      "s047",
+      "s063",
+      "s069",
+      "s071",
+      "s073",
+      "s081",
+      "s097",
+      "s106",
+      "s125",
+      "s102",
+      "s108",
+      "s044",
+      "s052",
+      "s070",
+      "s083",
+      "s118",
+      "s126",
+      "s016",
+      "s019"
     ]
   },
   {
@@ -65,12 +111,34 @@
     "goals": [
       "Learn to read and play slash chords (C/E, G/B, etc.)",
       "Drill the thai-ballad-rolling-arpeggio pattern with a walking bass",
-      "Work through this week's Foundation songs — expect this to take real repetition"
+      "DEEP-DIVE: this week's Foundation songs below — expect this to take real repetition",
+      "COVERAGE: quick sight-read pass on this week's Coverage songs"
     ],
     "song_ids": [
       "s098",
       "s032",
       "s004"
+    ],
+    "coverage_song_ids": [
+      "s030",
+      "s031",
+      "s037",
+      "s059",
+      "s060",
+      "s062",
+      "s079",
+      "s092",
+      "s093",
+      "s112",
+      "s114",
+      "s026",
+      "s051",
+      "s066",
+      "s035",
+      "s049",
+      "s087",
+      "s101",
+      "s045"
     ]
   },
   {
@@ -80,34 +148,98 @@
     "goals": [
       "Learn the waltz-oom-pah-pah pattern for any 3/4 songs",
       "Practice progressions that center on vi instead of just passing through it",
-      "Work through this week's Foundation songs"
+      "DEEP-DIVE: this week's Foundation songs below",
+      "COVERAGE: quick sight-read pass on this week's Coverage songs"
     ],
     "song_ids": [
       "s050"
+    ],
+    "coverage_song_ids": [
+      "s046",
+      "s058",
+      "s076",
+      "s086",
+      "s111",
+      "s122",
+      "s027",
+      "s028",
+      "s034",
+      "s061",
+      "s074",
+      "s103",
+      "s120",
+      "s121",
+      "s011",
+      "s014",
+      "s017",
+      "s018",
+      "s021"
     ]
   },
   {
     "week": 7,
-    "title": "Fluency + remaining Foundation songs",
-    "focus": "Less new theory, more speed and confident sight-reading of charts you haven't memorized.",
+    "title": "Fluency + the harder songs (simplified chords)",
+    "focus": "Less new theory, more speed. This week's Coverage batch is the 'complex-other' songs (jazz extensions, modulations) — play them from the SIMPLIFIED chord chart (triads only), not the full original, so they're still doable at your level.",
     "goals": [
       "Clear any remaining Foundation-tier songs using patterns you already know",
       "Practice sight-reading a chord chart you've never seen while listening to the track",
-      "Start dipping into Stretch tier — same families, just new songs to apply them to"
+      "For Coverage songs marked 'simplified available', use the simplified chords, not the original — full accuracy is a later-month goal"
     ],
     "song_ids": [
       "s002"
+    ],
+    "coverage_song_ids": [
+      "s024",
+      "s029",
+      "s033",
+      "s040",
+      "s057",
+      "s072",
+      "s075",
+      "s078",
+      "s080",
+      "s084",
+      "s089",
+      "s090",
+      "s091",
+      "s094",
+      "s099",
+      "s105",
+      "s107",
+      "s110",
+      "s113"
     ]
   },
   {
     "week": 8,
-    "title": "Polish + expand",
-    "focus": "Get your favorites performance-ready, and set up a sustainable way to keep working through Stretch/Reference tier after these 2 months.",
+    "title": "Polish + finish the coverage pass",
+    "focus": "Get your favorites performance-ready, and clear the last Coverage batch so every one of your 127 songs has been touched at least once.",
     "goals": [
-      "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite songs",
+      "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite Foundation songs",
       "Record yourself once — it's the fastest way to hear what needs work",
-      "Pick a standing weekly slot to keep adding songs from Stretch/Reference tier going forward"
+      "Finish this week's Coverage songs (simplified chords where marked)",
+      "After month 2: revisit any Coverage song you want at full harmonic accuracy — the shortcut patterns you now know make that much faster the second time"
     ],
-    "song_ids": []
+    "song_ids": [],
+    "coverage_song_ids": [
+      "s115",
+      "s012",
+      "s013",
+      "s036",
+      "s039",
+      "s048",
+      "s055",
+      "s064",
+      "s077",
+      "s082",
+      "s085",
+      "s096",
+      "s100",
+      "s109",
+      "s116",
+      "s117",
+      "s124",
+      "s127"
+    ]
   }
 ]

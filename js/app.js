@@ -16,12 +16,12 @@
   function loadProgress(){
     try{
       const raw = localStorage.getItem(STORAGE_KEY);
-      if(!raw) return { songStatus:{}, log:[], lastVisit:null };
+      if(!raw) return { songStatus:{}, log:[], lastVisit:null, spots:[] };
       const parsed = JSON.parse(raw);
-      return Object.assign({ songStatus:{}, log:[], lastVisit:null }, parsed);
+      return Object.assign({ songStatus:{}, log:[], lastVisit:null, spots:[] }, parsed);
     }catch(e){
       console.warn("progress load failed", e);
-      return { songStatus:{}, log:[], lastVisit:null };
+      return { songStatus:{}, log:[], lastVisit:null, spots:[] };
     }
   }
   function saveProgress(p){
@@ -39,6 +39,58 @@
     return progress.songStatus[id] || "not-started";
   }
 
+  // ---------- Deliberate practice spots (spaced repetition) ----------
+  const REVIEW_LADDER_DAYS = [1, 3, 7, 14, 30];
+  function todayISO(){ return new Date().toISOString().slice(0,10); }
+  function addDaysISO(days){
+    const d = new Date();
+    d.setDate(d.getDate() + days);
+    return d.toISOString().slice(0,10);
+  }
+  function addSpot(songId, label){
+    const spot = {
+      id: "spot-" + Date.now() + "-" + Math.random().toString(36).slice(2,7),
+      songId, label,
+      createdAt: todayISO(),
+      streak: 0,
+      status: "active",
+      nextReview: todayISO(),
+      history: [],
+    };
+    progress.spots.push(spot);
+    saveProgress(progress);
+    return spot;
+  }
+  function logSpotAttempt(spotId, clean){
+    const spot = progress.spots.find(s=>s.id===spotId);
+    if(!spot) return;
+    spot.history.push({ date: todayISO(), clean });
+    if(clean){
+      spot.streak += 1;
+      if(spot.streak >= REVIEW_LADDER_DAYS.length){
+        spot.status = "graduated";
+      } else {
+        const interval = REVIEW_LADDER_DAYS[Math.min(spot.streak, REVIEW_LADDER_DAYS.length-1)];
+        spot.nextReview = addDaysISO(interval);
+      }
+    } else {
+      spot.streak = 0;
+      spot.nextReview = addDaysISO(REVIEW_LADDER_DAYS[0]);
+    }
+    saveProgress(progress);
+  }
+  function deleteSpot(spotId){
+    progress.spots = progress.spots.filter(s=>s.id!==spotId);
+    saveProgress(progress);
+  }
+  function spotsForSong(songId){
+    return progress.spots.filter(s=>s.songId===songId);
+  }
+  function spotsDueToday(){
+    const today = todayISO();
+    return progress.spots.filter(s=> s.status==="active" && s.nextReview<=today);
+  }
+
   // ---------- routing / tabs ----------
   const tabButtons = Array.from(document.querySelectorAll(".tab-btn"));
   const panels = {
@@ -46,6 +98,7 @@
     library: document.getElementById("tab-library"),
     technique: document.getElementById("tab-technique"),
     schedule: document.getElementById("tab-schedule"),
+    "practice-log": document.getElementById("tab-practice-log"),
     "song-detail": document.getElementById("tab-song-detail"),
   };
   function showTab(name){
@@ -55,6 +108,7 @@
     if(name==="library") renderLibrary();
     if(name==="technique") renderTechnique();
     if(name==="schedule") renderSchedule();
+    if(name==="practice-log") renderPracticeLog();
   }
   tabButtons.forEach(btn=>{
     btn.addEventListener("click", ()=> showTab(btn.dataset.tab));
@@ -131,6 +185,18 @@
       unlockedEl.innerHTML = `<div class="empty-state">Nothing marked comfortable yet. Start with Week 1 in the Schedule tab.</div>`;
     } else {
       unlockedEl.innerHTML = `<ul>${Array.from(learnedFamilies).map(f=>`<li>${esc(familyName(f))} <span style="color:var(--text-dim);">— unlocks ${SONGS.filter(s=>s.progression_family===f).length} songs</span></li>`).join("")}</ul>`;
+    }
+
+    // deliberate practice due today
+    const dueEl = document.getElementById("dash-spots-due");
+    const due = spotsDueToday();
+    if(!due.length){
+      dueEl.innerHTML = `<div class="empty-state">${progress.spots.length ? "Nothing due today." : "No trouble spots logged yet — flag one from any song's detail page after a practice session."}</div>`;
+    } else {
+      dueEl.innerHTML = due.slice(0,5).map(sp=>{
+        const song = songById(sp.songId);
+        return `<div class="spot-row"><div class="spot-info"><a href="#" onclick="window.__openSong('${sp.songId}');return false;">${esc(song?song.title:"?")}</a><div class="spot-label">${esc(sp.label)}</div></div></div>`;
+      }).join("") + (due.length>5 ? `<div style="color:var(--text-dim);font-size:0.82rem;margin-top:6px;">+${due.length-5} more — see the Deliberate Practice tab</div>` : "");
     }
 
     // progress by tier
@@ -239,10 +305,27 @@
         ${s.bridge_chords && s.bridge_chords.length ? chordBlock("Bridge / notes", s.bridge_chords) : ""}
         <p style="color:var(--text-dim);font-size:0.8rem;margin-top:8px;">Source: ${esc(s.source||"estimated")}</p>
       </div>
+      ${hasSimplified(s) ? `
+      <div class="card">
+        <h2>Simplified chords <span style="color:var(--text-dim);font-weight:400;font-size:0.8rem;">— triads only, for early practice</span></h2>
+        ${s.simplified_verse_chords ? chordBlock("Verse (simplified)", s.simplified_verse_chords) : ""}
+        ${s.simplified_chorus_chords ? chordBlock("Chorus (simplified)", s.simplified_chorus_chords) : ""}
+        ${s.simplified_bridge_chords ? chordBlock("Bridge (simplified)", s.simplified_bridge_chords) : ""}
+        <p style="color:var(--text-dim);font-size:0.8rem;margin-top:8px;">Extended/jazz chords swapped for their nearest plain major/minor triad — use this version until the original feels reachable.</p>
+      </div>` : ""}
 
       <div class="card">
         <h2>Practice status</h2>
         <div class="status-buttons" id="status-buttons"></div>
+      </div>
+
+      <div class="card">
+        <h2>Deliberate practice — trouble spots</h2>
+        <div id="song-spots-list"></div>
+        <div class="add-spot-row">
+          <input type="text" id="new-spot-label" placeholder="e.g. 'G to Bm transition in the chorus'">
+          <button id="add-spot-btn">Add trouble spot</button>
+        </div>
       </div>
 
       <div class="card">
@@ -259,9 +342,31 @@
       });
     });
 
+    const spotsListEl = document.getElementById("song-spots-list");
+    const mySpots = spotsForSong(s.id);
+    spotsListEl.innerHTML = mySpots.length
+      ? mySpots.map(sp=>spotRow(sp, sp.status==="graduated")).join("")
+      : `<div class="empty-state" style="padding:10px 0;">No trouble spots flagged for this song yet.</div>`;
+    spotsListEl.querySelectorAll("[data-clean]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{ logSpotAttempt(btn.dataset.spotId, btn.dataset.clean==="1"); window.__openSong(s.id); });
+    });
+    spotsListEl.querySelectorAll("[data-delete-spot]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{ deleteSpot(btn.dataset.spotId); window.__openSong(s.id); });
+    });
+    document.getElementById("add-spot-btn").addEventListener("click", ()=>{
+      const input = document.getElementById("new-spot-label");
+      const label = input.value.trim();
+      if(!label) return;
+      addSpot(s.id, label);
+      window.__openSong(s.id);
+    });
+
     document.getElementById("song-detail-tab-btn").hidden = false;
     showTab("song-detail");
   };
+  function hasSimplified(s){
+    return !!(s.simplified_verse_chords || s.simplified_chorus_chords || s.simplified_bridge_chords);
+  }
   function chordBlock(label, chords){
     if(!chords || !chords.length) return "";
     return `<div class="chord-block"><span class="section-label">${label}</span>${chords.map(esc).join("  –  ")}</div>`;
@@ -333,19 +438,85 @@
       return;
     }
     el.innerHTML = SCHEDULE.map(w=>{
-      const songsHtml = (w.song_ids||[]).map(id=>{
+      const deepHtml = (w.song_ids||[]).map(id=>{
         const s = songById(id);
         if(!s) return "";
         return `<span class="song-chip" onclick="window.__openSong('${id}')">${esc(s.title)}</span>`;
+      }).join("");
+      const coverageHtml = (w.coverage_song_ids||[]).map(id=>{
+        const s = songById(id);
+        if(!s) return "";
+        return `<span class="coverage-chip" onclick="window.__openSong('${id}')">${esc(s.title)}</span>`;
       }).join("");
       return `
         <div class="week-block">
           <h3>Week ${w.week} — ${esc(w.title)}</h3>
           <div class="week-focus">${esc(w.focus)}</div>
           <ul>${(w.goals||[]).map(g=>`<li>${esc(g)}</li>`).join("")}</ul>
-          ${songsHtml ? `<div class="song-chip-row">${songsHtml}</div>` : ""}
+          ${deepHtml ? `<div class="week-track-label">Deep-dive (get fluent)</div><div class="song-chip-row">${deepHtml}</div>` : ""}
+          ${coverageHtml ? `<div class="week-track-label">Coverage (sight-read once)</div><div class="song-chip-row">${coverageHtml}</div>` : ""}
         </div>`;
     }).join("");
+  }
+
+  // ---------- Deliberate Practice tab ----------
+  function renderPracticeLog(){
+    const el = document.getElementById("practice-log-content");
+    const due = spotsDueToday().sort((a,b)=> (a.streak - b.streak));
+    const active = progress.spots.filter(s=>s.status==="active");
+    const graduated = progress.spots.filter(s=>s.status==="graduated");
+
+    let html = `
+      <div class="card">
+        <h2>How this works</h2>
+        <p style="color:var(--text-dim);font-size:0.9rem;">
+          Flag a specific trouble spot on any song (a chord transition, a tricky bar — not the whole song).
+          Log each attempt as clean or missed. Clean reps push the spot further out on a spaced-repetition
+          schedule (1 &rarr; 3 &rarr; 7 &rarr; 14 &rarr; 30 days); a miss resets it to tomorrow. After 5 clean
+          reviews in a row it graduates — you don't need to see it again.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Due today (${due.length})</h2>
+        ${due.length ? due.map(s=>spotRow(s)).join("") : `<div class="empty-state">Nothing due. Add a trouble spot from any song's detail page.</div>`}
+      </div>
+      <div class="card">
+        <h2>All active spots (${active.length})</h2>
+        ${active.length ? active.sort((a,b)=>a.nextReview.localeCompare(b.nextReview)).map(s=>spotRow(s)).join("") : `<div class="empty-state">No trouble spots logged yet.</div>`}
+      </div>
+      <div class="card">
+        <h2>Graduated (${graduated.length})</h2>
+        ${graduated.length ? graduated.map(s=>spotRow(s,true)).join("") : `<div class="empty-state">None yet — they'll show up here once a spot survives 5 clean spaced reviews.</div>`}
+      </div>
+    `;
+    el.innerHTML = html;
+    el.querySelectorAll("[data-clean]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{ logSpotAttempt(btn.dataset.spotId, btn.dataset.clean==="1"); renderPracticeLog(); renderDashboard(); });
+    });
+    el.querySelectorAll("[data-delete-spot]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{ deleteSpot(btn.dataset.spotId); renderPracticeLog(); });
+    });
+    el.querySelectorAll("[data-open-song]").forEach(a=>{
+      a.addEventListener("click", (e)=>{ e.preventDefault(); window.__openSong(a.dataset.openSong); });
+    });
+  }
+  function spotRow(s, readonly){
+    const song = songById(s.songId);
+    const songLabel = song ? song.title : "(song removed)";
+    return `
+      <div class="spot-row">
+        <div class="spot-info">
+          <a href="#" data-open-song="${s.songId}">${esc(songLabel)}</a>
+          <div class="spot-label">${esc(s.label)}</div>
+          <div class="spot-meta">streak ${s.streak} &middot; next review ${readonly?'—':esc(s.nextReview)}</div>
+        </div>
+        ${readonly ? "" : `
+        <div class="spot-actions">
+          <button data-clean="1" data-spot-id="${s.id}">Clean rep</button>
+          <button data-clean="0" data-spot-id="${s.id}" class="missed-btn">Missed</button>
+          <button data-delete-spot data-spot-id="${s.id}" class="delete-btn">&times;</button>
+        </div>`}
+      </div>`;
   }
 
   function esc(str){
