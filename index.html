@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piano Prep — 2-Month Accompaniment Hub</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <div class="brand">🎹 Piano Prep</div>
+    <nav class="tabs" id="tabs">
+      <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+      <button class="tab-btn" data-tab="library">Song Library</button>
+      <button class="tab-btn" data-tab="technique">Technique Library</button>
+      <button class="tab-btn" data-tab="schedule">2-Month Schedule</button>
+      <button class="tab-btn" data-tab="song-detail" id="song-detail-tab-btn" hidden>Song</button>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <section id="tab-dashboard" class="tab-panel active">
+      <div class="grid-stats" id="dash-stats"></div>
+      <div class="dash-columns">
+        <div class="card">
+          <h2>Today's suggestion</h2>
+          <div id="dash-today"></div>
+        </div>
+        <div class="card">
+          <h2>Current unlocked skills</h2>
+          <div id="dash-unlocked"></div>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Progress by tier</h2>
+        <div id="dash-tiers"></div>
+      </div>
+    </section>
+
+    <section id="tab-library" class="tab-panel">
+      <div class="library-controls">
+        <input type="search" id="lib-search" placeholder="Search song or artist...">
+        <select id="lib-filter-tier">
+          <option value="">All tiers</option>
+          <option value="foundation">Foundation (2-month focus)</option>
+          <option value="stretch">Stretch</option>
+          <option value="reference">Reference (later)</option>
+        </select>
+        <select id="lib-filter-family">
+          <option value="">All progression families</option>
+        </select>
+        <select id="lib-filter-status">
+          <option value="">All statuses</option>
+          <option value="not-started">Not started</option>
+          <option value="learning">Learning</option>
+          <option value="comfortable">Comfortable</option>
+          <option value="mastered">Mastered</option>
+        </select>
+      </div>
+      <div class="lib-count" id="lib-count"></div>
+      <div class="song-grid" id="song-grid"></div>
+    </section>
+
+    <section id="tab-technique" class="tab-panel">
+      <div id="technique-content"></div>
+    </section>
+
+    <section id="tab-schedule" class="tab-panel">
+      <div id="schedule-content"></div>
+    </section>
+
+    <section id="tab-song-detail" class="tab-panel">
+      <button class="back-btn" id="back-to-library">&larr; Back to library</button>
+      <div id="song-detail-content"></div>
+    </section>
+
+  </main>
+</div>
+
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

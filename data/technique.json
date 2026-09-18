@@ -1,0 +1,187 @@
+{
+  "fundamentals": [
+    {
+      "id": "posture",
+      "title": "Sitting & hand position",
+      "body": "Sit so your elbows are roughly level with the keys, forearms parallel to the floor. Curve your fingers gently like you're holding a small ball — don't play with flat, straight fingers. Wrists stay loose and slightly above the level of the keys, never collapsed below them."
+    },
+    {
+      "id": "finger-numbers",
+      "title": "Finger numbers (this is how every fingering instruction is written)",
+      "body": "Both hands use the same numbering: thumb = 1, index = 2, middle = 3, ring = 4, pinky = 5. Right hand thumb (1) sits toward the low/left side of what RH plays; left hand thumb (1) sits toward the high/right side of what LH plays — the thumbs point toward each other in the middle of the keyboard."
+    },
+    {
+      "id": "finding-notes",
+      "title": "Finding your way around the keys",
+      "body": "White keys repeat in a pattern of 7 (A B C D E F G). Black keys come in groups of 2 and 3 — find any group of 2 black keys, and the white key just to its left is C. Middle C is the C nearest the center of the keyboard. Once you can find every C without counting, you can find any note by counting up the musical alphabet from the nearest C."
+    },
+    {
+      "id": "reading-chord-symbols",
+      "title": "Reading a chord chart (this is your sheet music)",
+      "body": "You'll never need to read standard notation for this project — chord charts are enough. A bare letter (C, G, D) means a major triad. A letter + 'm' (Cm, Gm) means minor. A letter + '7' (C7, G7) adds a bluesy/tense note. 'maj7' is a soft jazzy color. 'sus4' means suspended — no 3rd, sounds open/unresolved, and almost always resolves back to the plain major right after. A slash chord like 'C/E' means play a C major chord but put E as the lowest (bass) note instead of C — very common in Thai ballads for smooth descending basslines."
+    }
+  ],
+  "chord_shapes": [
+    {
+      "id": "major-triad",
+      "title": "Major triad — the shape behind ~half of every chord you'll play",
+      "formula": "1st - 3rd - 5th note of the scale (root, +2 white-key-equivalent steps, +2 more)",
+      "example": "C major = C - E - G. G major = G - B - D. F major = F - A - C.",
+      "feel": "Stable, happy, 'home' sound.",
+      "fingering_lh": "5-3-1 (pinky on root, middle on 3rd, thumb on 5th, reading bottom to top)",
+      "fingering_rh": "1-3-5 (thumb on root, middle on 3rd, pinky on 5th)"
+    },
+    {
+      "id": "minor-triad",
+      "title": "Minor triad — same shape, one note moved",
+      "formula": "Same as major but the middle note (3rd) drops one half-step (one key, white or black) lower.",
+      "example": "C major (C-E-G) becomes C minor (C-Eb-G). A minor is special: it's the ONLY minor chord that uses all-white keys (A-C-E), which is why beginners often start in the key of C/Am.",
+      "feel": "Sad, wistful, tense — this is most of the emotional weight in Thai ballads.",
+      "fingering_lh": "5-3-1",
+      "fingering_rh": "1-3-5"
+    },
+    {
+      "id": "dominant-7th",
+      "title": "7th chord — adds pull/tension that wants to resolve",
+      "formula": "Major triad + one more note, a minor 7th above the root (roughly a whole step below the octave).",
+      "example": "G7 = G-B-D-F.",
+      "feel": "Creates forward motion — almost always leads into the next chord (classic V7 → I motion).",
+      "fingering_lh": "5-3-2-1 or drop the 5th (5-3-1) if your hand is small — the 7th and root matter most",
+      "fingering_rh": "1-2-3-5"
+    },
+    {
+      "id": "slash-chord",
+      "title": "Slash chords — same chord, different bass note",
+      "formula": "Chord letter / bass note. Play the full chord with your right hand as normal; your left hand (or your right-hand pinky if playing LH-only) plays ONLY the note after the slash, low.",
+      "example": "C/E = C major chord, but E is the lowest note played. Common Thai-ballad move: C → G/B → Am → G, where the bass walks down C-B-A-G step by step under the chords.",
+      "feel": "Smooths out the bassline so it doesn't jump around — this is the #1 trick that makes Thai ballad accompaniment sound 'right'.",
+      "fingering_lh": "Play just the bass note with your thumb or pinky depending on register; chord goes in RH."
+    }
+  ],
+  "lh_patterns": [
+    {
+      "id": "block-chords",
+      "title": "1. Block chords",
+      "difficulty": 1,
+      "when_to_learn": "Week 1 — your very first pattern.",
+      "how": "Play all notes of the chord together, once per beat (or once per chord change if the song is slow). Left hand alone, or both hands together doubling the chord.",
+      "practice_tip": "Get comfortable changing chords smoothly before adding rhythm complexity. This alone is enough to accompany a huge number of slow ballads."
+    },
+    {
+      "id": "broken-chords-simple",
+      "title": "2. Broken chords (simple)",
+      "difficulty": 2,
+      "when_to_learn": "Week 2, once block chords feel automatic.",
+      "how": "Instead of all notes at once, play them one at a time, low to high: root, then 3rd, then 5th, repeat. Gives movement without needing a fast tempo.",
+      "practice_tip": "Keep the notes perfectly even in timing — a metronome at a slow tempo (60-70 bpm) is your best friend here."
+    },
+    {
+      "id": "arpeggio-1-5-3-5",
+      "title": "3. Arpeggio pattern (1-5-3-5)",
+      "difficulty": 3,
+      "when_to_learn": "Week 3-4.",
+      "how": "Left hand plays: root (low), 5th, 3rd, 5th again, in a steady repeating 4-note loop per chord. This is the classic 'rippling' ballad accompaniment sound.",
+      "practice_tip": "Practice the pattern on ONE chord (like C) for several minutes until your hand does it without looking, before applying it to a real progression."
+    },
+    {
+      "id": "alberti-bass",
+      "title": "4. Alberti bass",
+      "difficulty": 3,
+      "when_to_learn": "Week 4-5.",
+      "how": "A specific broken-chord order: root, 5th, 3rd, 5th (low-high-middle-high) played evenly, usually a bit faster/lighter than the arpeggio pattern. Very common in classical-leaning pop ballads.",
+      "practice_tip": "This is nearly identical in shape to pattern 3 — the difference is mostly in touch (lighter, more even) and tempo (a bit brisker)."
+    },
+    {
+      "id": "waltz-oom-pah-pah",
+      "title": "5. Waltz pattern (oom-pah-pah) — for 3/4 time songs",
+      "difficulty": 2,
+      "when_to_learn": "Whenever a song in your list is tagged 3/4 — introduce around week 5-6.",
+      "how": "Beat 1: low bass note (root) alone. Beats 2 and 3: the rest of the chord (3rd+5th together), lighter. 'OOM-pah-pah, OOM-pah-pah.'",
+      "practice_tip": "Exaggerate the accent on beat 1 at first — it's what makes it feel like a waltz instead of just a chord repeated three times."
+    },
+    {
+      "id": "thai-ballad-rolling-arpeggio",
+      "title": "6. Thai-ballad rolling arpeggio (with walking bass)",
+      "difficulty": 4,
+      "when_to_learn": "Week 5-6, after you're solid on pattern 3 and comfortable with slash chords.",
+      "how": "Like pattern 3, but the bass note of each chord follows a stepwise walk-down or walk-up (using slash chords) instead of jumping — e.g. under C, G/B, Am, G the bass plays C-B-A-G in sequence while the rolling arpeggio continues on top.",
+      "practice_tip": "This is the single highest-value pattern for this song list — a huge share of the Thai ballads use exactly this move. Worth extra dedicated practice time in week 5-6."
+    }
+  ],
+  "progression_families": [
+    {
+      "id": "I-V-vi-IV",
+      "name": "I - V - vi - IV",
+      "example_in_C": "C - G - Am - F",
+      "feel": "The single most common pop progression on Earth — upbeat but a little bittersweet. If you learn nothing else, learn this one first.",
+      "priority": 1
+    },
+    {
+      "id": "vi-IV-I-V",
+      "name": "vi - IV - I - V",
+      "example_in_C": "Am - F - C - G",
+      "feel": "The exact same 4 chords as above, just starting from the minor — opens sadder, resolves brighter.",
+      "priority": 2
+    },
+    {
+      "id": "I-vi-IV-V",
+      "name": "I - vi - IV - V",
+      "example_in_C": "C - Am - F - G",
+      "feel": "The classic '50s/doo-wop' loop — warm, nostalgic, very singable.",
+      "priority": 3
+    },
+    {
+      "id": "vi-based-minor-ballad",
+      "name": "vi-centered minor ballad",
+      "example_in_C": "Am - G - F - G  (or similar, centers on the relative minor)",
+      "feel": "Opens and lingers on the sad chord rather than passing through it — typical slow, emotional ballad opener.",
+      "priority": 4
+    },
+    {
+      "id": "thai-ballad-walkdown",
+      "name": "Thai ballad walk-down (slash chords)",
+      "example_in_C": "C - G/B - Am - G  (bass walks C-B-A-G)",
+      "feel": "THE signature sound of Thai pop ballads. Pairs with the rolling-arpeggio pattern (#6 above). Learning this progression + pattern combo unlocks the largest single cluster of songs in your list.",
+      "priority": 1
+    },
+    {
+      "id": "I-IV-V",
+      "name": "I - IV - V (three-chord basic)",
+      "example_in_C": "C - F - G  (sometimes C - F - C - G)",
+      "feel": "The simplest possible progression — folk, country, blues-adjacent. Great confidence-builder.",
+      "priority": 2
+    },
+    {
+      "id": "ii-V-I",
+      "name": "ii - V - I",
+      "example_in_C": "Dm - G - C",
+      "feel": "A little jazzier/smoother resolution, common inside verses of more sophisticated pop songs.",
+      "priority": 5
+    },
+    {
+      "id": "12-bar-blues",
+      "name": "12-bar blues form",
+      "example_in_C": "C-C-C-C / F-F-C-C / G-F-C-C (4 bars each of I, then IV, then a I-V-IV-I turnaround)",
+      "feel": "Recognizable driving, rootsy feel.",
+      "priority": 6
+    },
+    {
+      "id": "complex-other",
+      "name": "Complex / other",
+      "example_in_C": "Varies — modulations, jazz chords, non-diatonic movement",
+      "feel": "Save these for late in the 2 months, or treat as long-term Reference-tier songs.",
+      "priority": 7
+    }
+  ],
+  "practice_method": {
+    "title": "How to learn any new song in ~20 minutes once you know its pattern",
+    "steps": [
+      "1. Look up the song's key and progression family in the hub. If you already know that family, skip straight to step 3.",
+      "2. If it's a new family: practice just the chord changes, hands separate, slowly, with no rhythm pattern yet — just clean changes.",
+      "3. Add the LH pattern tagged for this song. Practice it on ONE chord first, then move through the full progression slowly (60-70 bpm).",
+      "4. Add your right hand — easiest is just singing the melody yourself while LH accompanies. Optionally RH doubles the chord tones softly.",
+      "5. Gradually increase tempo toward the song's real speed over a few practice sessions — don't jump to full speed immediately.",
+      "6. Play through with the chart in front of you (you are NOT required to memorize) while following the recording/video for timing."
+    ]
+  }
+}
