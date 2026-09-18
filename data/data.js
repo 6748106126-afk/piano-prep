@@ -4526,8 +4526,6 @@ window.APP_DATA = {
         "Start dipping into Stretch tier — same families, just new songs to apply them to"
       ],
       "song_ids": [
-        "s005",
-        "s053",
         "s002"
       ]
     },
