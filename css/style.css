@@ -197,3 +197,29 @@ body{
   font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);
   margin-top:10px;margin-bottom:4px;
 }
+
+/* --- Song Data (analytics) --- */
+.viz-block{
+  background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px 18px;margin-bottom:14px;
+}
+.viz-header{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.viz-header h3{margin:0;font-size:0.98rem;}
+.viz-toggle{
+  background:none;border:1px solid var(--border);color:var(--text-dim);
+  padding:4px 10px;border-radius:6px;cursor:pointer;font-size:0.76rem;flex-shrink:0;
+}
+.viz-toggle:hover{color:var(--text);border-color:var(--accent);}
+.viz-chart{margin-top:10px;}
+.viz-row{display:grid;grid-template-columns:150px 1fr 40px;align-items:center;gap:8px;margin-bottom:6px;}
+.viz-label{font-size:0.8rem;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.viz-track{background:var(--bg-elev2);border-radius:4px;height:14px;overflow:hidden;}
+.viz-fill{background:var(--accent);height:100%;border-radius:4px;min-width:3px;}
+.viz-value{font-size:0.78rem;color:var(--text-dim);text-align:right;}
+.viz-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:0.85rem;}
+.viz-table th,.viz-table td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--border);}
+.viz-table th{color:var(--text-dim);font-weight:600;font-size:0.78rem;text-transform:uppercase;}
+@media (max-width:560px){
+  .viz-row{grid-template-columns:100px 1fr 34px;}
+  .viz-label{font-size:0.74rem;}
+}

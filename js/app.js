@@ -99,6 +99,7 @@
     technique: document.getElementById("tab-technique"),
     schedule: document.getElementById("tab-schedule"),
     "practice-log": document.getElementById("tab-practice-log"),
+    "analytics": document.getElementById("tab-analytics"),
     "song-detail": document.getElementById("tab-song-detail"),
   };
   function showTab(name){
@@ -109,6 +110,7 @@
     if(name==="technique") renderTechnique();
     if(name==="schedule") renderSchedule();
     if(name==="practice-log") renderPracticeLog();
+    if(name==="analytics") renderAnalytics();
   }
   tabButtons.forEach(btn=>{
     btn.addEventListener("click", ()=> showTab(btn.dataset.tab));
@@ -408,6 +410,14 @@
     });
     html += `</div>`;
 
+    if((t.melody_technique||[]).length){
+      html += `<div class="tech-section"><h2>Playing the melody (Month 3)</h2>`;
+      t.melody_technique.forEach(m=>{
+        html += `<div class="tech-item"><h3>${esc(m.title)}</h3><p>${esc(m.body)}</p></div>`;
+      });
+      html += `</div>`;
+    }
+
     html += `<div class="tech-section"><h2>Chord progression families</h2>`;
     (t.progression_families||[]).sort((a,b)=>a.priority-b.priority).forEach(f=>{
       const count = SONGS.filter(s=>s.progression_family===f.id).length;
@@ -448,6 +458,11 @@
         if(!s) return "";
         return `<span class="coverage-chip" onclick="window.__openSong('${id}')">${esc(s.title)}</span>`;
       }).join("");
+      const melodyHtml = (w.melody_song_ids||[]).map(id=>{
+        const s = songById(id);
+        if(!s) return "";
+        return `<span class="song-chip" onclick="window.__openSong('${id}')">${esc(s.title)}</span>`;
+      }).join("");
       return `
         <div class="week-block">
           <h3>Week ${w.week} — ${esc(w.title)}</h3>
@@ -455,6 +470,7 @@
           <ul>${(w.goals||[]).map(g=>`<li>${esc(g)}</li>`).join("")}</ul>
           ${deepHtml ? `<div class="week-track-label">Deep-dive (get fluent)</div><div class="song-chip-row">${deepHtml}</div>` : ""}
           ${coverageHtml ? `<div class="week-track-label">Coverage (sight-read once)</div><div class="song-chip-row">${coverageHtml}</div>` : ""}
+          ${melodyHtml ? `<div class="week-track-label">Melody practice</div><div class="song-chip-row">${melodyHtml}</div>` : ""}
         </div>`;
     }).join("");
   }
@@ -517,6 +533,109 @@
           <button data-delete-spot data-spot-id="${s.id}" class="delete-btn">&times;</button>
         </div>`}
       </div>`;
+  }
+
+  // ---------- Song Data (analytics) ----------
+  function buildBarChart(id, items, opts){
+    opts = opts || {};
+    const max = Math.max(1, ...items.map(i=>i.value));
+    const rows = items.map(i=>{
+      const pct = Math.round((i.value/max)*100);
+      return `
+        <div class="viz-row" title="${esc(i.label)}: ${i.value}${opts.unit||''}">
+          <div class="viz-label">${esc(i.label)}</div>
+          <div class="viz-track"><div class="viz-fill" style="width:${pct}%"></div></div>
+          <div class="viz-value">${i.value}</div>
+        </div>`;
+    }).join("");
+    const tableRows = items.map(i=>`<tr><td>${esc(i.label)}</td><td>${i.value}</td></tr>`).join("");
+    return `
+      <div class="viz-block">
+        <div class="viz-header">
+          <h3>${esc(opts.title||"")}</h3>
+          <button class="viz-toggle" data-viz-toggle="${id}">View as table</button>
+        </div>
+        ${opts.subtitle ? `<div class="meta-line">${esc(opts.subtitle)}</div>` : ""}
+        <div class="viz-chart" id="${id}-chart">${rows}</div>
+        <table class="viz-table" id="${id}-table" hidden>
+          <thead><tr><th>${esc(opts.labelHeader||"Category")}</th><th>${esc(opts.valueHeader||"Count")}</th></tr></thead>
+          <tbody>${tableRows}</tbody>
+        </table>
+      </div>`;
+  }
+  function renderAnalytics(){
+    const el = document.getElementById("analytics-content");
+    if(el.dataset.rendered){ return; }
+    el.dataset.rendered = "1";
+
+    const count = (arr) => {
+      const m = {};
+      arr.forEach(v=>{ m[v] = (m[v]||0)+1; });
+      return Object.entries(m).map(([label,value])=>({label,value})).sort((a,b)=>b.value-a.value);
+    };
+
+    const families = count(SONGS.map(s=>familyName(s.progression_family)));
+    const patterns = count(SONGS.map(s=>s.pattern));
+    const difficulty = count(SONGS.map(s=>"Level "+s.difficulty)).sort((a,b)=>a.label.localeCompare(b.label));
+    const tiers = count(SONGS.map(s=>s.tier));
+    const confidence = count(SONGS.map(s=>s.confidence));
+    const language = count(SONGS.map(s=>s.language==="th"?"Thai":"English"));
+
+    function baseKey(k){
+      if(!k) return "?";
+      const m = k.match(/^([A-G][#b]?\s*(?:major|minor))/i);
+      return m ? m[1].replace(/\s+/g,' ').trim() : k.split('(')[0].trim();
+    }
+    const keys = count(SONGS.map(s=>baseKey(s.key))).slice(0,12);
+
+    const chordCounts = {};
+    SONGS.forEach(s=>{
+      ["verse_chords","chorus_chords","bridge_chords"].forEach(f=>{
+        (s[f]||[]).forEach(c=>{
+          const base = c.split('/')[0];
+          chordCounts[base] = (chordCounts[base]||0)+1;
+        });
+      });
+    });
+    const topChords = Object.entries(chordCounts).map(([label,value])=>({label,value}))
+      .sort((a,b)=>b.value-a.value).slice(0,15);
+
+    let html = `
+      <div class="card">
+        <h2>Your 127-song library, by the numbers</h2>
+        <p style="color:var(--text-dim);font-size:0.9rem;">
+          Chord-symbol statistics only (no lyrics stored or analyzed). This is what "pop songs reuse the same
+          progressions" looks like in your actual list — use it to see where your practice time gets the most leverage.
+        </p>
+      </div>
+      <div class="grid-stats">
+        <div class="stat-tile"><div class="num">${Object.keys(chordCounts).length}</div><div class="label">Distinct chords across all 127 songs</div></div>
+        <div class="stat-tile"><div class="num">${families[0]?families[0].value:0}</div><div class="label">Songs in the top progression family</div></div>
+        <div class="stat-tile"><div class="num">${keys[0]?keys[0].label:'?'}</div><div class="label">Most common key</div></div>
+        <div class="stat-tile"><div class="num">${topChords[0]?topChords[0].label:'?'}</div><div class="label">Most-used single chord (${topChords[0]?topChords[0].value:0}×)</div></div>
+      </div>
+    `;
+    html += buildBarChart("viz-families", families, {title:"Progression families", subtitle:"How many songs use each chord-progression pattern — learn the top ones first for maximum reuse.", labelHeader:"Family"});
+    html += buildBarChart("viz-chords", topChords, {title:"Most common individual chords (top 15)", subtitle:"Across every verse/chorus/bridge in your library — these are the shapes worth over-learning.", labelHeader:"Chord", unit:" uses"});
+    html += buildBarChart("viz-keys", keys, {title:"Keys used", subtitle:"Top 12 base keys (capo/modulation notes collapsed to the underlying key).", labelHeader:"Key"});
+    html += buildBarChart("viz-difficulty", difficulty, {title:"Difficulty distribution (1 = easiest, 5 = hardest)", labelHeader:"Level"});
+    html += buildBarChart("viz-patterns", patterns, {title:"Suggested left-hand pattern", labelHeader:"Pattern"});
+    html += buildBarChart("viz-tiers", tiers, {title:"Tier breakdown", labelHeader:"Tier"});
+    html += buildBarChart("viz-confidence", confidence, {title:"Chord data confidence", subtitle:"Verified = found on a real chord chart. Estimated = inferred from genre/artist convention.", labelHeader:"Confidence"});
+    html += buildBarChart("viz-language", language, {title:"Language split", labelHeader:"Language"});
+
+    el.innerHTML = html;
+    el.querySelectorAll("[data-viz-toggle]").forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        const id = btn.dataset.vizToggle;
+        const chart = document.getElementById(id+"-chart");
+        const table = document.getElementById(id+"-table");
+        const showingTable = !table.hidden;
+        table.hidden = showingTable;
+        chart.hidden = !showingTable;
+        btn.textContent = showingTable ? "View as table" : "View as chart";
+      });
+    });
   }
 
   function esc(str){

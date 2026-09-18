@@ -212,13 +212,12 @@
   },
   {
     "week": 8,
-    "title": "Polish + finish the coverage pass",
-    "focus": "Get your favorites performance-ready, and clear the last Coverage batch so every one of your 127 songs has been touched at least once.",
+    "title": "Finish the coverage pass",
+    "focus": "Clear the last Coverage batch so every one of your 127 songs has been touched at least once, before shifting into the bonus weeks below.",
     "goals": [
-      "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite Foundation songs",
-      "Record yourself once — it's the fastest way to hear what needs work",
       "Finish this week's Coverage songs (simplified chords where marked)",
-      "After month 2: revisit any Coverage song you want at full harmonic accuracy — the shortcut patterns you now know make that much faster the second time"
+      "Skim back over earlier weeks' Coverage songs — anything you want to flag as a favorite for Week 9's deeper pass?",
+      "Keep Foundation songs warm with a quick daily run-through"
     ],
     "song_ids": [],
     "coverage_song_ids": [
@@ -241,5 +240,82 @@
       "s124",
       "s127"
     ]
+  },
+  {
+    "week": 9,
+    "title": "Month 3, Week 1 — Cleanup",
+    "focus": "Months 1-2 are done: all 127 songs have been touched, 14 are fluent. This month is about consolidation, not new material — close every open loop before adding melody.",
+    "goals": [
+      "Finish any remaining Coverage songs from weeks 3-8 you haven't gotten to yet",
+      "Review the Deliberate Practice tab — clear out spots that are actually solid now, keep drilling ones that aren't",
+      "Re-run all 14 Foundation songs and mark honestly: which ones are actually comfortable vs. still shaky?",
+      "Pick 2-3 shaky Foundation songs and give them a focused re-practice session"
+    ],
+    "song_ids": [],
+    "coverage_song_ids": []
+  },
+  {
+    "week": 10,
+    "title": "Month 3, Week 2 — Introduce melody (6 songs)",
+    "focus": "New skill: playing the tune with your right hand while your left hand keeps the accompaniment pattern going. See the Technique Library's new 'Playing the melody' section — this is ear-training, not sheet-reading, since no melody is transcribed here (only chords are, since only chords are safe to publish).",
+    "goals": [
+      "Read the 'Playing the melody' section in the Technique Library before starting",
+      "Pick ONE easy Foundation song below and find just the first phrase's melody by ear, per the daily drill",
+      "Keep LH pattern simple (block chords) while you're learning this — don't combine a new LH pattern with a new RH skill at the same time",
+      "Aim for one clean phrase per day, not a whole song at once"
+    ],
+    "song_ids": [
+      "s003",
+      "s005",
+      "s009",
+      "s015",
+      "s025",
+      "s001"
+    ],
+    "coverage_song_ids": []
+  },
+  {
+    "week": 11,
+    "title": "Month 3, Week 3 — Melody on more songs + deepen favorites",
+    "focus": "Two tracks: extend melody-playing to more songs, and give your favorite Coverage-tier songs the full deep-dive treatment now that you have time to spare.",
+    "goals": [
+      "Continue the melody drill on 2-3 more Foundation songs (below)",
+      "Separately, deep-dive the Level-up songs below — favorites from Coverage tier, upgraded from 'read once' to comfortable",
+      "Log Deliberate Practice spots for any melody phrase that isn't clean after 3 sessions"
+    ],
+    "song_ids": [
+      "s006",
+      "s007",
+      "s010",
+      "s016",
+      "s019",
+      "s020",
+      "s022",
+      "s023",
+      "s026",
+      "s104"
+    ],
+    "coverage_song_ids": [],
+    "melody_song_ids": [
+      "s003",
+      "s005",
+      "s009",
+      "s015",
+      "s025",
+      "s001"
+    ]
+  },
+  {
+    "week": 12,
+    "title": "Month 3, Week 4 — Final polish + performance",
+    "focus": "Get performance-ready: chords + melody together on your top favorites, and set up how you'll keep going after this program ends.",
+    "goals": [
+      "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite songs, melody and chords together",
+      "Record yourself once — it's the fastest way to hear what needs work",
+      "Clear out any remaining Deliberate Practice spots",
+      "Pick a standing weekly slot (e.g. 2-3 songs/week) to keep working through the rest of Stretch and Reference tier — the patterns and melody-by-ear skill you now have make each new song much faster than these first 3 months"
+    ],
+    "song_ids": [],
+    "coverage_song_ids": []
   }
 ]

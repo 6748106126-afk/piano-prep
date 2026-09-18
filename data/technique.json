@@ -173,6 +173,33 @@
       "priority": 7
     }
   ],
+  "melody_technique": [
+    {
+      "id": "why-by-ear",
+      "title": "Why by ear, not sheet music",
+      "body": "There's no melody transcription in this app — partly because a song's melody (unlike chord symbols) is the copyrighted part of a song, so it can't be reproduced here, and partly because ear-training is the more useful skill long-term: once you can find a melody by ear over a chord you already know, you can do it for ANY song, not just the ones someone transcribed for you."
+    },
+    {
+      "id": "find-the-note",
+      "title": "Finding the melody note by ear",
+      "body": "Play the chord for that moment in the song with your left hand, then hum or sing the melody note against it while it rings. Most melody notes are one of the chord tones (root/3rd/5th) or a note one step away from one — try each chord tone against your hum until one matches, then try the note just above or below it. This gets fast with practice; it's a skill, not a lookup."
+    },
+    {
+      "id": "rh-melody-plus-lh-pattern",
+      "title": "Combining melody (RH) with your LH pattern",
+      "body": "Don't try to add a fully harmonized right hand — start with just the single melody note, played on the beat, while your left hand keeps whatever accompaniment pattern you already know for that song. Once that's solid, you can thicken the melody note with an octave or a third below it for a fuller sound."
+    },
+    {
+      "id": "octave-and-phrasing",
+      "title": "Octave placement and simple phrasing",
+      "body": "Play the melody an octave (or two) above where your left hand sits, so the two hands don't collide. Hold long notes for their full length rather than clipping them, and take a tiny breath/lift at the same places a singer would breathe — that's most of what makes a melody sound musical rather than mechanical."
+    },
+    {
+      "id": "daily-ear-drill",
+      "title": "A simple daily drill",
+      "body": "Pick one short phrase (4-8 notes) from a song you already know the chords to. Loop that phrase on the recording, hum it until it's automatic, then find it on the keyboard one note at a time. Once you have it, play it 5 times in a row cleanly before moving to the next phrase — same 'clean reps' rule as the Deliberate Practice method."
+    }
+  ],
   "practice_method": {
     "title": "How to learn any new song in ~20 minutes once you know its pattern",
     "steps": [

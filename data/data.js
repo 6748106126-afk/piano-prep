@@ -5062,6 +5062,33 @@ window.APP_DATA = {
         "priority": 7
       }
     ],
+    "melody_technique": [
+      {
+        "id": "why-by-ear",
+        "title": "Why by ear, not sheet music",
+        "body": "There's no melody transcription in this app — partly because a song's melody (unlike chord symbols) is the copyrighted part of a song, so it can't be reproduced here, and partly because ear-training is the more useful skill long-term: once you can find a melody by ear over a chord you already know, you can do it for ANY song, not just the ones someone transcribed for you."
+      },
+      {
+        "id": "find-the-note",
+        "title": "Finding the melody note by ear",
+        "body": "Play the chord for that moment in the song with your left hand, then hum or sing the melody note against it while it rings. Most melody notes are one of the chord tones (root/3rd/5th) or a note one step away from one — try each chord tone against your hum until one matches, then try the note just above or below it. This gets fast with practice; it's a skill, not a lookup."
+      },
+      {
+        "id": "rh-melody-plus-lh-pattern",
+        "title": "Combining melody (RH) with your LH pattern",
+        "body": "Don't try to add a fully harmonized right hand — start with just the single melody note, played on the beat, while your left hand keeps whatever accompaniment pattern you already know for that song. Once that's solid, you can thicken the melody note with an octave or a third below it for a fuller sound."
+      },
+      {
+        "id": "octave-and-phrasing",
+        "title": "Octave placement and simple phrasing",
+        "body": "Play the melody an octave (or two) above where your left hand sits, so the two hands don't collide. Hold long notes for their full length rather than clipping them, and take a tiny breath/lift at the same places a singer would breathe — that's most of what makes a melody sound musical rather than mechanical."
+      },
+      {
+        "id": "daily-ear-drill",
+        "title": "A simple daily drill",
+        "body": "Pick one short phrase (4-8 notes) from a song you already know the chords to. Loop that phrase on the recording, hum it until it's automatic, then find it on the keyboard one note at a time. Once you have it, play it 5 times in a row cleanly before moving to the next phrase — same 'clean reps' rule as the Deliberate Practice method."
+      }
+    ],
     "practice_method": {
       "title": "How to learn any new song in ~20 minutes once you know its pattern",
       "steps": [
@@ -5288,13 +5315,12 @@ window.APP_DATA = {
     },
     {
       "week": 8,
-      "title": "Polish + finish the coverage pass",
-      "focus": "Get your favorites performance-ready, and clear the last Coverage batch so every one of your 127 songs has been touched at least once.",
+      "title": "Finish the coverage pass",
+      "focus": "Clear the last Coverage batch so every one of your 127 songs has been touched at least once, before shifting into the bonus weeks below.",
       "goals": [
-        "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite Foundation songs",
-        "Record yourself once — it's the fastest way to hear what needs work",
         "Finish this week's Coverage songs (simplified chords where marked)",
-        "After month 2: revisit any Coverage song you want at full harmonic accuracy — the shortcut patterns you now know make that much faster the second time"
+        "Skim back over earlier weeks' Coverage songs — anything you want to flag as a favorite for Week 9's deeper pass?",
+        "Keep Foundation songs warm with a quick daily run-through"
       ],
       "song_ids": [],
       "coverage_song_ids": [
@@ -5317,6 +5343,83 @@ window.APP_DATA = {
         "s124",
         "s127"
       ]
+    },
+    {
+      "week": 9,
+      "title": "Month 3, Week 1 — Cleanup",
+      "focus": "Months 1-2 are done: all 127 songs have been touched, 14 are fluent. This month is about consolidation, not new material — close every open loop before adding melody.",
+      "goals": [
+        "Finish any remaining Coverage songs from weeks 3-8 you haven't gotten to yet",
+        "Review the Deliberate Practice tab — clear out spots that are actually solid now, keep drilling ones that aren't",
+        "Re-run all 14 Foundation songs and mark honestly: which ones are actually comfortable vs. still shaky?",
+        "Pick 2-3 shaky Foundation songs and give them a focused re-practice session"
+      ],
+      "song_ids": [],
+      "coverage_song_ids": []
+    },
+    {
+      "week": 10,
+      "title": "Month 3, Week 2 — Introduce melody (6 songs)",
+      "focus": "New skill: playing the tune with your right hand while your left hand keeps the accompaniment pattern going. See the Technique Library's new 'Playing the melody' section — this is ear-training, not sheet-reading, since no melody is transcribed here (only chords are, since only chords are safe to publish).",
+      "goals": [
+        "Read the 'Playing the melody' section in the Technique Library before starting",
+        "Pick ONE easy Foundation song below and find just the first phrase's melody by ear, per the daily drill",
+        "Keep LH pattern simple (block chords) while you're learning this — don't combine a new LH pattern with a new RH skill at the same time",
+        "Aim for one clean phrase per day, not a whole song at once"
+      ],
+      "song_ids": [
+        "s003",
+        "s005",
+        "s009",
+        "s015",
+        "s025",
+        "s001"
+      ],
+      "coverage_song_ids": []
+    },
+    {
+      "week": 11,
+      "title": "Month 3, Week 3 — Melody on more songs + deepen favorites",
+      "focus": "Two tracks: extend melody-playing to more songs, and give your favorite Coverage-tier songs the full deep-dive treatment now that you have time to spare.",
+      "goals": [
+        "Continue the melody drill on 2-3 more Foundation songs (below)",
+        "Separately, deep-dive the Level-up songs below — favorites from Coverage tier, upgraded from 'read once' to comfortable",
+        "Log Deliberate Practice spots for any melody phrase that isn't clean after 3 sessions"
+      ],
+      "song_ids": [
+        "s006",
+        "s007",
+        "s010",
+        "s016",
+        "s019",
+        "s020",
+        "s022",
+        "s023",
+        "s026",
+        "s104"
+      ],
+      "coverage_song_ids": [],
+      "melody_song_ids": [
+        "s003",
+        "s005",
+        "s009",
+        "s015",
+        "s025",
+        "s001"
+      ]
+    },
+    {
+      "week": 12,
+      "title": "Month 3, Week 4 — Final polish + performance",
+      "focus": "Get performance-ready: chords + melody together on your top favorites, and set up how you'll keep going after this program ends.",
+      "goals": [
+        "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite songs, melody and chords together",
+        "Record yourself once — it's the fastest way to hear what needs work",
+        "Clear out any remaining Deliberate Practice spots",
+        "Pick a standing weekly slot (e.g. 2-3 songs/week) to keep working through the rest of Stretch and Reference tier — the patterns and melody-by-ear skill you now have make each new song much faster than these first 3 months"
+      ],
+      "song_ids": [],
+      "coverage_song_ids": []
     }
   ]
 };
