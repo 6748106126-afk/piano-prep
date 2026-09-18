@@ -1,0 +1,115 @@
+[
+  {
+    "week": 1,
+    "title": "Absolute foundations",
+    "focus": "No songs yet — build the physical skills every song depends on: finding notes, posture, major/minor chord shapes, reading chord symbols.",
+    "goals": [
+      "Learn finger numbering (1-5) for both hands and practice 5-finger scale runs in C",
+      "Find every C, and every white-key note, without counting from scratch",
+      "Play major triads (block chords) in C, G, and F — clean, no fumbling",
+      "Play minor triads in Am, Em, Dm",
+      "Practice switching between just 2 chords (e.g. C to G) slowly and smoothly, 10 min/day"
+    ],
+    "song_ids": []
+  },
+  {
+    "week": 2,
+    "title": "First pattern + first song",
+    "focus": "Add the broken-chord pattern, and play your first real song using block chords in the simplest progression family (I-IV-V).",
+    "goals": [
+      "Learn the broken-chords-simple left-hand pattern (Technique Library)",
+      "Practice I-IV-V in 2-3 keys until it's automatic",
+      "Pick 1-2 Foundation songs tagged I-IV-V and play them with block chords, slow tempo",
+      "Start singing the melody yourself while your left hand plays"
+    ],
+    "song_ids": [
+      "s005",
+      "s053"
+    ]
+  },
+  {
+    "week": 3,
+    "title": "I-V-vi-IV — the most common pop progression (29 songs unlocked)",
+    "focus": "This one progression appears more than any other in your list. Master it once, unlock a whole cluster of songs.",
+    "goals": [
+      "Drill I-V-vi-IV in C (C-G-Am-F) until your hand finds it without looking",
+      "Apply the arpeggio-1-5-3-5 pattern on top once chord changes are smooth",
+      "Work through the Foundation songs in this family, one at a time, using the 20-minute learning method from the Technique Library"
+    ],
+    "song_ids": [
+      "s003",
+      "s009",
+      "s054"
+    ]
+  },
+  {
+    "week": 4,
+    "title": "vi-IV-I-V and I-vi-IV-V (23 songs unlocked)",
+    "focus": "Same chords as week 3, different order/starting point — notice how much of this transfers.",
+    "goals": [
+      "Compare vi-IV-I-V and I-vi-IV-V against week 3's progression — same 4 chords, different feel",
+      "Introduce the alberti-bass pattern as an alternative texture",
+      "Work through this week's Foundation songs"
+    ],
+    "song_ids": [
+      "s015",
+      "s025",
+      "s001",
+      "s008"
+    ]
+  },
+  {
+    "week": 5,
+    "title": "Thai ballad walk-down + slash chords (10 songs unlocked)",
+    "focus": "The signature Thai-ballad sound. This is the highest-value week in the whole plan — likely unlocks your biggest single cluster of songs.",
+    "goals": [
+      "Learn to read and play slash chords (C/E, G/B, etc.)",
+      "Drill the thai-ballad-rolling-arpeggio pattern with a walking bass",
+      "Work through this week's Foundation songs — expect this to take real repetition"
+    ],
+    "song_ids": [
+      "s098",
+      "s032",
+      "s004"
+    ]
+  },
+  {
+    "week": 6,
+    "title": "Minor-centered ballads + waltz time (5 songs unlocked)",
+    "focus": "Songs that open on the sad chord, plus anything in 3/4 time.",
+    "goals": [
+      "Learn the waltz-oom-pah-pah pattern for any 3/4 songs",
+      "Practice progressions that center on vi instead of just passing through it",
+      "Work through this week's Foundation songs"
+    ],
+    "song_ids": [
+      "s050"
+    ]
+  },
+  {
+    "week": 7,
+    "title": "Fluency + remaining Foundation songs",
+    "focus": "Less new theory, more speed and confident sight-reading of charts you haven't memorized.",
+    "goals": [
+      "Clear any remaining Foundation-tier songs using patterns you already know",
+      "Practice sight-reading a chord chart you've never seen while listening to the track",
+      "Start dipping into Stretch tier — same families, just new songs to apply them to"
+    ],
+    "song_ids": [
+      "s005",
+      "s053",
+      "s002"
+    ]
+  },
+  {
+    "week": 8,
+    "title": "Polish + expand",
+    "focus": "Get your favorites performance-ready, and set up a sustainable way to keep working through Stretch/Reference tier after these 2 months.",
+    "goals": [
+      "Full run-throughs (start to finish, no stopping) of your top 3-5 favorite songs",
+      "Record yourself once — it's the fastest way to hear what needs work",
+      "Pick a standing weekly slot to keep adding songs from Stretch/Reference tier going forward"
+    ],
+    "song_ids": []
+  }
+]
